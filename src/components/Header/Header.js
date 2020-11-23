@@ -8,6 +8,12 @@ class Header extends Component {
       <header className={styles.appBar}>
         <img className={styles.logo} src={logo} alt="logo" />
         <h1 className={styles.primaryHdg}>Fantastical Bestiary</h1>
+        <div class="nav">
+          <span class="ham">Ham</span>
+          <span class="main">Home</span>
+          <span class="main">Details</span>
+          <span class="main">Edit</span>
+        </div>
       </header>
     );
   }

@@ -88,7 +88,7 @@ CARD
   background-color: #fefefe;
   overflow: hidden;
   border-radius: 3px;
-  box-shadow: 0 2px 4px rgb(0,0,0,0.3);
+  box-shadow: 0 2px 4px rgb(0, 0, 0, 0.3);
 }
 
 .card-bd,
@@ -102,7 +102,7 @@ CARD
 }
 
 .card-action:before {
-  content: "";
+  content: '';
   width: 70%;
   height: 0;
   border-bottom: 1px solid #737c81;
@@ -121,7 +121,6 @@ CARD
   margin-left: 8px;
 }
 
-
 /* --------------------------------------------------
 FORM FIELDS
 -------------------------------------------------- */
@@ -130,7 +129,7 @@ FORM FIELDS
   padding: 20px;
   background-color: #fefefe;
   border-radius: 3px;
-  box-shadow: 0 2px 4px rgb(0,0,0,0.3);
+  box-shadow: 0 2px 4px rgb(0, 0, 0, 0.3);
 }
 
 .formWrap > * {
@@ -164,9 +163,39 @@ BLOCKS
 .blocks > * {
   box-sizing: border-box;
   display: inline-block;
-  width: 25%;
+  /* width: 25%; */
+  width: 100%;
   padding: 0 0 20px 20px;
   vertical-align: top;
+}
+
+.nav > * {
+  display: none;
+  margin-left: 10px;
+}
+
+.nav > .ham {
+  display: inline-block;
+}
+
+@media screen and (min-width: 600px) {
+  .blocks > * {
+    width: 33.333%;
+  }
+
+  .nav > * {
+    display: inline-block;
+  }
+
+  .nav > .ham {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .blocks > * {
+    width: 25%;
+  }
 }
 
 /* --------------------------------------------------
@@ -180,7 +209,11 @@ CARD HEADING
   color: #25201d;
   vertical-align: middle;
   border-left: 3px solid #cf5513;
-  background: linear-gradient(90deg, rgba(207,85,19,0.4) 0%, rgba(207,85,19,0) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(207, 85, 19, 0.4) 0%,
+    rgba(207, 85, 19, 0) 100%
+  );
 }
 
 .cardSubHdg {
